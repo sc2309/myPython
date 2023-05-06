@@ -8,6 +8,6 @@ a = 4j  # this is a complex value
 print(a)
 b = ["pari", "parth", "dibbu", "shivay"]
 print(b)
-c = ("nana ji", "nani", "mama", "mami")
+c = ("Ram Prasad", "Ahilya", "Prince", "Nikita")
 print(c)
 
