@@ -19,6 +19,6 @@ print(d, e, f)
 
 #    Random Numbers
 
-print(random.randrange(100.103))
+print(random.randrange(100,103))
 
 
