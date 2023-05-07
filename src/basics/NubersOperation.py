@@ -22,4 +22,3 @@ print(d, e, f)
 print(random.randrange(100.103))
 
 
-#    s
