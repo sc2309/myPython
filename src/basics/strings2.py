@@ -23,3 +23,11 @@ if 'worse' not in a:
 
 print(a[7:13])
 print(a[-13:-7])
+
+#   string with upper and lower case and replace and split. strip() is used to remove space from end or start
+print(a.upper())
+print(a.lower())
+b = "I like / Resting Also"
+print(b.split(" / "))
+
+print(a.replace('c', 'C'))
