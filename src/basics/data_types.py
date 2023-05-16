@@ -6,11 +6,8 @@ z = 3.1459   # this is a float value
 print(z)
 a = 4j  # this is a complex value
 print(a)
-b = ["pari", "parth", "dibbu", "shivay"]   #    this is a list in square brackets[] we can have different data types as well
+b = ["pari", "parth", "dibbu", "shivay"]
 print(b)
-c = ("Ram Prasad", "Ahilya")     #     this is a set in parenthesis ()
+c = ("Ram Prasad", "Ahilya", "Prince", "Nikita")
 print(c)
-d = {"name": "John", "age": 36}	  #   this is a dict by assigning multiple values in curly braces {}
-print(d)
-e = {"apple", "banana", "cherry"}    #    this is a set in curly braces {}
-print(e)
+
