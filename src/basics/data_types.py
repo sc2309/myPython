@@ -10,4 +10,7 @@ b = ["pari", "parth", "dibbu", "shivay"]
 print(b)
 c = ("Ram Prasad", "Ahilya", "Prince", "Nikita")
 print(c)
-
+d = {"name" : "John", "age" : 36}	  #   this is a dict by assigning multiple values in curly braces {}
+print(d)
+e = {"apple", "banana", "cherry"}    #    this is a set in curly braces {}
+print(e)
