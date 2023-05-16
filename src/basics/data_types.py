@@ -6,8 +6,8 @@ z = 3.1459   # this is a float value
 print(z)
 a = 4j  # this is a complex value
 print(a)
-b = ["pari", "parth", "dibbu", "shivay"]
+b = ["pari", "parth", "dibbu", "shivay"]   #    this is a list in square brackets[]
 print(b)
-c = ("Ram Prasad", "Ahilya", "Prince", "Nikita")
+c = ("Ram Prasad", "Ahilya")     #         
 print(c)
 
