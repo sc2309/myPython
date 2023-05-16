@@ -8,6 +8,11 @@ a = 4j  # this is a complex value
 print(a)
 b = ["pari", "parth", "dibbu", "shivay"]   #   this is a list in [] it can store different data types
 print(b)
+b.append("below 18")
+b.insert(2, "No One")
+print(b)
+b.remove("No One")
+print(b)
 c = ("Ram Prasad", "Ahilya", "Prince", "Nikita")    #    this is a tupple in ()
 print(c)
 d = {"name" : "John", "age" : 36}	  #   this is a dict by assigning multiple values in curly braces {}
