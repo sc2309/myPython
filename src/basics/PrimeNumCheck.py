@@ -6,3 +6,4 @@ for i in range(1, x):
     else:
         print("NP")
         break
+        #   write a program to check square root don't use **0.5
