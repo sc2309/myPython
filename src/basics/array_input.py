@@ -14,3 +14,4 @@ for c in range(x):
     if r == arr[c]:
         print("At index value {}".format(k))
     k += 1
+#          or print(arr.index(value to be found)) instead of for loop
