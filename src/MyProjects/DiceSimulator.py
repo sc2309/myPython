@@ -2,14 +2,19 @@ import random
 
 
 def RandGenerator():
-    x = random.randrange(1, 7)
+    x = random.randrange(1, 7)        #   function generates random numbers
     return x
 
 
 r = RandGenerator()
-x = input("Press S and then enter to start: ")
+# x = input("Press S and then enter to start: ")
+c = 0
+#  starts printing a dice structure
 print("------------")
-print("|          |")
-print("|    {}     |".format(r))
-print("|          |")
+for j in range(2):
+    print("|          |")
+    if c == 0:
+        print("|    {}     |".format(r)) #  prints the line in which the number will be written
+    c += 1
+
 print("------------")
