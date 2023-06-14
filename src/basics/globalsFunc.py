@@ -4,7 +4,7 @@ w = 15
 def func():
     copy = globals()["w"]
     print(copy)
-    globals()["w"] = 100000
+    globals()["w"] = "100000"
 
 
 func()
