@@ -1,17 +1,11 @@
 import sys
 sys.setrecursionlimit(10000)
 print(sys.getrecursionlimit())
-i = 0
-def show():
-    print("please enter the number till which you have to count: ")
 
-def recur():
-    global i
-    print(i)
-    i += 1
-    if i == 10:
-        show()
-    recur()
-show()
-n = int(input())
-recur()
+def recur(n):
+    if n == 1:
+        return 1
+    return n + recur(n - 1)
+n = int(input("Please enter the limit: "))
+res = recur(n)
+print(res)
