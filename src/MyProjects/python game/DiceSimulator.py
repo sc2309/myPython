@@ -10,7 +10,7 @@ def RandGenerator():
     for j in range(2):
         print("|          |")
         if c == 0:
-            print("|    {}     |".format(r)) #  prints the line in which the number will be written
+            print("|   ",x,"    |") #  prints the line in which the number will be written
         c += 1
 
     print("------------")

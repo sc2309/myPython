@@ -1,0 +1,33 @@
+Characters:
+	Kylo Ren
+	Darth Malgus
+	Plapertine
+	Ray Skywalker
+	Luke Skywalker
+	Obi Van Kenobi
+	Anakin Skywalker
+	Yoda
+	Inquisitor
+	Darth Mauls
+	kannan
+	Qui-Gon
+	Waldik
+inputs:
+	any character:
+		health
+		lightsaber type with damage
+		reflect attack 3 times in a row
+	any opponent:
+		health
+		lightsaber type with damage
+		reflect attack certain times in a row
+	where to strike:
+		head
+		left hand
+		right hand
+		middle body
+		left leg
+		right leg
+features:
+	two fighters and none will be automatic
+	

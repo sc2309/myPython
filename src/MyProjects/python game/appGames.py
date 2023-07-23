@@ -6,3 +6,5 @@ def game_open():
         RandGenerator()
     elif choise == "Rand number guessing game":
         start()
+    else:
+        pass
