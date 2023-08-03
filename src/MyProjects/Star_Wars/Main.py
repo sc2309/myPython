@@ -1,5 +1,8 @@
 import random
 from start import *
 
-if __name__ == '__main__':
-    Start()
+def mainF():
+    if __name__ == '__main__':
+        Start()
+
+mainF()
