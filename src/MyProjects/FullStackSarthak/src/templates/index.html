@@ -3,12 +3,12 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-        <script type="text/javascript" src="script.js"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='script.js') }}"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     </head>
 <body>
 
-<div class="topnav">
+    <div class="topnav">
     <a class="active" href="#home">Home</a>
     <a href="#news">News</a>
     <a href="#contact">Contact</a>
@@ -16,14 +16,26 @@
     <a href="/result">Result</a>
 </div>
 
-<div style="padding-left:16px">
-    <h2>Top Navigation Example</h2>
-    <p>Some content..</p>
-    <form action="/result" method="post">
-        Enter marks: <input type="number" id="divEdit" name="name" placeholder="number 0-80">
-        <br>
-        <input type="submit" value="Submit">
-    </form>
+<div class="box">
+    <div style="padding-left:16px">
+        <h2>Top Navigation Example</h2>
+        <p>Some content..</p>
+        <form action="/result" method="post">
+            Enter marks of maths: <input type="number" id="divEdit" name="math_marks">
+            <br>
+            Enter marks of science(Bio+Phy+Che): <input type="number" id="divEdit" name="science_marks">
+            <br>
+            Enter marks of English + Hindi: <input type="number" id="divEdit" name="EngHin_marks">
+            <br>
+            Enter marks of Computer: <input type="number" id="divEdit" name="Comp_marks">
+            <br>
+            Enter marks of SSC: <input type="number" id="divEdit" name="SSC_marks">
+            <br>
+            Enter the total of total marks <input type="number" id="divEdit" name="total_marks">
+            <br>
+            <input class="button" type="submit" value="Submit">
+        </form>
+    </div>
 </div>
 </body>
 </html>
