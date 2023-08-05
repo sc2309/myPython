@@ -78,10 +78,10 @@ class StarJediFighters:
 
     def player1_attack(self, attacker, defender):
         move = input("\nSelect your move P1:\n"
-                     "lightsaber strike on head(lsh)\n"
-                     "lightsaber strike on hand(lshand)\n"
-                     "lightsaber strike on leg(lsl)\n"
-                     "lightsaber strike on body(lsb)\n").strip()
+                    "lightsaber strike on head(lsh)\n"
+                    "lightsaber strike on hand(lshand)\n"
+                    "lightsaber strike on leg(lsl)\n"
+                    "lightsaber strike on body(lsb)\n").strip()
 
         if move == 'lsh':
             defender.take_damage(attacker.saber_head)
@@ -101,10 +101,10 @@ class StarJediFighters:
 
     def player2_attack(self, attacker, defender):
         move = input("\nSelect your move P2:\n"
-                     "lightsaber strike on head(lsh)\n"
-                     "lightsaber strike on hand(lshand)\n"
-                     "lightsaber strike on leg(lsl)\n"
-                     "lightsaber strike on body(lsb)\n").strip()
+                    "lightsaber strike on head(lsh)\n"
+                    "lightsaber strike on hand(lshand)\n"
+                    "lightsaber strike on leg(lsl)\n"
+                    "lightsaber strike on body(lsb)\n").strip()
 
         if move == 'lsh':
             defender.take_damage(attacker.saber_head)
