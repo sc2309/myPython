@@ -40,3 +40,12 @@ body {
   color: aliceblue;
   text-shadow: #333;
 }
+
+.footerBox{
+  position: relative;
+  background-color: #333;
+  width: 1349px;
+  margin: 0px;
+  height: 200px;
+  top: 200px;
+}

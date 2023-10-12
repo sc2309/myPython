@@ -1,0 +1,5 @@
+n = int(input())
+takeInput = input()
+arr = takeInput.split()
+arr.sort()
+print(arr[n-2])

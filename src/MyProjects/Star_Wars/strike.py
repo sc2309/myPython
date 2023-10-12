@@ -1,7 +1,5 @@
-from Main import mainF
-
-def exit():
-    return "Thanks for playing! may the force be with you."
+import sys
+from music import *
 
 def P1Strike(h,sh,shand,sb,sl,h2,sh2,shand2,sb2,sl2):
     print("Select your move P1 \nlightsaber strike on head(lsh)\nlightsaber strike on hand(lshand)\nlightsaber strike on leg(lsl)\nlightsaber strike on body(lsb)\n")
@@ -24,10 +22,9 @@ def P1Strike(h,sh,shand,sb,sl,h2,sh2,shand2,sb2,sl2):
         print('missed')
     print("P2's health is,",h2,"\n")
     if h2 == 0 or h2 < 0:
-        print("P2 lost the game")
-        a = exit()
-        print(a)
-        mainF()
+        print("P2 lost the game\nThanks for playing! may the force be with you.")
+        play_music()
+        sys.exit()
     P2Strike(h,sh,shand,sb,sl,h2,sh2,shand2,sb2,sl2)
 
 def P2Strike(h,sh,shand,sb,sl,h2,sh2,shand2,sb2,sl2):
@@ -51,8 +48,7 @@ def P2Strike(h,sh,shand,sb,sl,h2,sh2,shand2,sb2,sl2):
         print('missed')
     print("P1's health is,",h,"\n")
     if h == 0 or h < 0:
-        print("P1 lost the game")
-        a = exit()
-        print(a)
-        mainF()
+        print("P1 lost the game\nThanks for playing! may the force be with you.")
+        play_music()
+        sys.exit()
     P1Strike(h,sh,shand,sb,sl,h2,sh2,shand2,sb2,sl2)

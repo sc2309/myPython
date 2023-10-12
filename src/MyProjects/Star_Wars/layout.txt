@@ -7,27 +7,30 @@ Characters:
 	Obi Van Kenobi
 	Anakin Skywalker
 	Yoda
-	Inquisitor
+
 	Darth Mauls
 	kannan
 	Qui-Gon
-	Waldik
 inputs:
 	any character:
 		health
 		lightsaber type with damage
-		reflect attack 3 times in a row
 	any opponent:
 		health
 		lightsaber type with damage
-		reflect attack certain times in a row
 	where to strike:
 		head
-		left hand
-		right hand
-		middle body
-		left leg
-		right leg
+		hands
+		body
+		leg
 features:
 	two fighters and none will be automatic
-	
+
+to be added:
+    add new characters    ~~ DONE ~~ 
+    choke using force
+    stun using force
+    add star currency
+    add buy able items
+    add a xlsx sheet to store username as well as star currency
+
