@@ -1,46 +1,20 @@
-import os
 import vosk
-import pyaudio
 
-def offline_speech_recognition(audio_file_path):
-    # Load the pre-trained model
-    model = vosk.Model("model")
+# Specify the path to the extracted model files
+model_path = "C:\sarthak\py\SchoolCompExhibition\vosk-model-small-en-us-0.15"
 
-    # Initialize the Vosk recognizer
-    recognizer = vosk.KaldiRecognizer(model, 16000)
+# Initialize the Vosk recognizer with the English model
+recognizer = vosk.Model(model_path)
 
-    # Open the audio file
-    audio_file = open(audio_file_path, "rb")
-    
-    # Initialize PyAudio for audio input
-    p = pyaudio.PyAudio()
-    stream = p.open(format=pyaudio.paInt16, channels=1, rate=16000, input=True, frames_per_buffer=8000)
-    
-    # Initialize variables to store recognized text
-    result = ""
+audio_file = "recorded_audio.wav"
 
-    while True:
-        data = audio_file.read(4000)
-        if len(data) == 0:
-            break
-        if recognizer.AcceptWaveform(data):
-            result += recognizer.Result()
-    
-    # Finalize the recognition process
-    result += recognizer.FinalResult()
+# Open and read the audio file
+with open(audio_file, "rb") as audio_data:
+    audio = audio_data.read()
 
-    return result
+# Perform speech recognition
+result = recognizer.recognize(audio)
 
-if __name__ == "__main__":
-    # Provide the path to an audio file (16kHz WAV format)
-    audio_file_path = "gg.wav"
-
-    if not os.path.exists(audio_file_path):
-        print("Audio file not found.")
-    else:
-        result = offline_speech_recognition(audio_file_path)
-
-        if result:
-            print("Recognized Text:", result)
-        else:
-            print("No speech recognized.")
+# Extract and print the recognized text
+recognized_text = result["text"]
+print("Recognized text:", recognized_text)

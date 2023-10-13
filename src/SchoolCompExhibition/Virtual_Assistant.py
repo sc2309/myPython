@@ -2,14 +2,15 @@ import subprocess
 import pyttsx3
 import sys
 import random
-from cx_Freeze import setup, Executable
+#from cx_Freeze import setup, Executable
+from Record_Voice import recordAudio, recognize
 
-setup(
-    name="Virtual_Assistant",
-    version="1.0",
-    description="Multi_Purpose_Program",
-    executables=[Executable("Virtual_Assistant.py")],
-)
+#setup(
+#    name="Virtual_Assistant",
+#    version="1.0",
+#    description="Multi_Purpose_Program",
+#    executables=[Executable("Virtual_Assistant.py")],
+#)
 
 def help():
     text = '''App Launcher: Allow me to open applications.
@@ -34,7 +35,9 @@ text = 'Hello, I am your virtual assistant, Scala. Please provide me with an ope
 text_to_speech(text)
 while True:
     print('type \'e\' to exit')
-    user = input().lower()
+    #user = input().lower()
+    recordAudio()
+    user = recognize('recorded_audio.wav')
     if 'help' in user:
         text2 = help()
         print(text2)
@@ -101,7 +104,9 @@ while True:
             print("The file cannot be found. Please ensure it is on your PC.")
     elif 'convert' in user:
         text_to_speech('Please provide the number to optimize my code. ')
-        num = float(input('Please provide the number to optimize my code: '))
+        #num = float(input('Please provide the number to optimize my code: '))
+        recordAudio()
+        num = recognize('recorded_audio.wav')
         if 'cm to m' in user or 'cl to l' in user or 'cg to g' in user:
             convert = num/100
         elif 'm to cm' in user or 'l to cl' in user or 'g to cg' in user:
@@ -137,7 +142,9 @@ while True:
     elif 'generate' in user:
         if 'number' in user:
             text_to_speech('Please enter the final number for the range')
-            gen = int(input('Please enter the final number for the range: '))
+            #gen = int(input('Please enter the final number for the range: '))
+            recordAudio()
+            gen = recognize('recorded_audio.wav')
             out = random.randrange(1, gen)
             print(out)
         elif 'passcode' in user:
@@ -207,8 +214,8 @@ while True:
         print('I cannot offer a solution for this injury. I recommend seeking medical attention.')
         text_to_speech('I cannot offer a solution for this injury. I recommend seeking medical attention.')
     elif 'feedback' in user:
-        text_to_speech('Enter the text')
-        feedback = str(input('Enter the text: '))
+        text_to_speech('Enter the text using keyboard')
+        feedback = str(input('Enter the text using keyboard: '))
         file_name = 'feedback.txt'
         with open(file_name, "a") as file:
             file.write("\n" + feedback)
