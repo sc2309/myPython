@@ -1,0 +1,69 @@
+## Table of Contents
+1. Introduction
+2. Usage
+3. Exception Handling
+4. Untitled Files
+5. Random Number Generation
+6. Unit Conversion
+7. First Aid Solutions
+8. Feedback System
+9. Storage of Feedback
+
+## 1. Introduction
+The Multi-Purpose Program is a versatile utility designed to perform a wide range of tasks, including opening various applications, generating random numbers, converting units, and providing first aid solutions. This documentation will guide you through the installation, usage, and features of this program.
+
+## 2. Usage
+The Multi-Purpose Program offers the following main features:
+
+### 2.1 Application Launching
+- You can open the following applications:
+  - Notepad
+  - Google Chrome
+  - Microsoft (MS) Edge
+  - Microsoft Word
+  - Microsoft Access
+  - Microsoft Excel
+  - Microsoft PowerPoint
+- If any of these applications are not installed on your device, an exception will occur, and you will be provided with a link to download and install them.
+			
+### 2.2 Untitled Files
+- The program creates five untitled text files: `Untitled1.txt`, `Untitled2.txt`, `Untitled3.txt`, `Untitled4.txt`, and `Untitled5.txt`. You can edit these files as needed.
+
+### 2.3 Random Number Generation
+- Generate random numbers within a specified limit.
+- Create random passcodes of up to 8 numbers.
+
+### 2.4 Unit Conversion
+- Convert between various units:
+  - Volume: cl, l, kl, m, cm, km
+  - Weight: g, cg, kg
+  - Length: foot
+  - Currency: dollars, rupees
+- Supports conversion both ways (e.g., from liters to gallons and vice versa).
+
+### 2.5 First Aid Solutions
+- Get first aid solutions for common issues such as burns, cuts, pain, and sprains.
+
+### 2.6 Feedback System
+- Provide feedback on the program's performance and features.
+
+## 3. Exception Handling
+If the program encounters any issues, such as the absence of required applications, it will display an exception message and provide you with a link to download and install the missing applications.
+
+## 4. Untitled Files
+The program creates five untitled text files (`untitled1.txt` to `untitled5.txt`) that you can use for various text editing purposes.
+
+## 5. Random Number Generation
+You can generate random numbers within a specified limit and create random passcodes with up to 8 numbers.
+
+## 6. Unit Conversion
+The program supports unit conversion for volume (cl, l, kl, m, cm, km), weight (g, cg, kg), length (foot), and currency (dollars, rupees) with bidirectional conversion capabilities.
+
+## 7. First Aid Solutions
+Access first aid solutions for common issues, including burns, cuts, pain, and sprains, through the program.
+
+## 8. Feedback System
+You can provide feedback on the program's performance and features to help us improve its functionality.
+
+## 9. Storage of Feedback
+Feedback provided by users is stored in a text file for future reference and program improvement.

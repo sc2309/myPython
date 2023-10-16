@@ -1,0 +1,6 @@
+1. open apps
+2. open files(.txt)
+3. Conversion Tools: Include tools for converting units, currencies, and measurements.
+4. Random Generators: Generate random numbers, passwords.
+5. provide solution to small injury.
+6. Feedback
