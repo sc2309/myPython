@@ -1,0 +1,10 @@
+def noLoop(n):
+    if n > 0:
+        noLoop(n - 1)
+        print(n,end=' ')
+    else:
+        return 0
+
+
+n = int(input())
+noLoop(n)
