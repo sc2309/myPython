@@ -168,8 +168,8 @@ def start_operation(user):
         text_to_speech(val)
     elif 'convert' in user:
         text_to_speech('Please provide the number to optimize my code. ')
-        val = recognize2()
-        num = int(val)
+        val= int(recognize2())
+        num = val
         if 'cm to m' in user or 'cl to l' in user or 'cg to g' in user:
             convert = num/100
         elif 'm to cm' in user or 'l to cl' in user or 'g to cg' in user:
@@ -205,8 +205,8 @@ def start_operation(user):
         text_to_speech(convert)
     elif 'number' in user:
         text_to_speech('Please enter the final number for the range')
-        val = recognize2()
-        gen = int(val)
+        val = int(recognize2())
+        gen = val
         out = random.randrange(1, gen)
         label = tkinter.Label(window, text=out)
         label.pack()
